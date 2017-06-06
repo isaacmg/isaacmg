@@ -17,7 +17,12 @@
    padding-bottom: 1px;
    margin: auto;
 
+
  }
+ @media screen and (min-width: 0px) and (max-width: 720px) {
+  #feed { display: none; }
+  #calendar { display: none; }
+}
  #padding {
     width: 700px;
     height: 10px;
@@ -25,6 +30,7 @@
     margin: auto;
 
   }
+
     </style>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
@@ -310,7 +316,7 @@
                             <img src="https://isaacmg.github.io/images/river_vis.png" height=300px width=350px />
                         </div>
                     <div class="project-info">
-                        <h3> <b> U.S. rivers flow map  </b></h3>
+                        <h3> <b> U.S. river flow map  </b></h3>
                         <p>
                             A realtime map of river flows across America that renders a graph of the river's flow information when selected. It also, queries our whitewater search engine for results on the selected river. The project uses ElasticSearch (for search results), NodeJS, D3.js, and SocketIO.
                         </p>
