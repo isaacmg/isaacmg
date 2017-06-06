@@ -6,12 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
+    <style>
+    #floatbar {
+    position:relative;
+}
+
+#feed {
+   width: 700px;
+   height: 350px;
+   padding-bottom: 1px;
+   margin: auto;
+
+ }
+ #padding {
+    width: 700px;
+    height: 10px;
+    padding-bottom: 25px;
+    margin: auto;
+
+  }
+    </style>
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="github-activity-0.1.4.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="github-activity-0.1.4.min.js"></script>
 </head>
 
 <body>
@@ -85,6 +113,14 @@
                         <p>
                         <br> </br>
                         <b> My Work</b>
+                        <div height="400px" width="100px" id="feed"></div>
+                        <div id="padding"> </div>
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+
+
 
                         <br> </br>
 
@@ -95,10 +131,23 @@
 
                           Feel free to <a href="#contact"> contact me </a> regarding opportunities, networking, my projects/PaddleSoft, or just to discuss technology in general.
                           </p>
+                          <!-- Prepare a container for your calendar. -->
+
+
                 </div>
+
             </div>
         </div>
     </div>
+
+
+
+
+
+<script>
+    GitHubCalendar(".calendar", "isaacmg");
+</script>
+
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
@@ -366,6 +415,15 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-63655547-5', 'auto');
 ga('send', 'pageview');
+
+</script>
+<script>
+GitHubActivity.feed({
+	username: "isaacmg",
+	 // optional
+	selector: "#feed",
+	limit: 20 // optional
+});
 
 </script>
 </body>
