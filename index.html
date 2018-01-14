@@ -273,21 +273,28 @@
     <div id="projects" class="background-alt">
       <div id="writing"> </div>
       <h2 class="heading"> Writing </h2>
-      <div class="container" style="background-color:white">
+      <div class="container" style="width:59%; background-color:white;" >
         <h3> Blog posts </h3>
-        <ul style="display:inline-block;text-align:left;">
-        <li> Medical Imaging Meets NIPS: A Summary</li>
+        <ul style="vertical-align:middle; margin: 15px 14px; list-style-type: none;">
+        <li> <a href=""> Medical Imaging Meets NIPS: A Summary </a> </li>
         <li> Overarching trends and application at NIPS (with links!)</li>
         <li> Complex event processing with Flink </li>
         <li> Computer Vision in Sports</li>
         <li> Building a NARX in MATLAB to forecast time series data </li>
       </ul>
+    </div>
+      <div class="container" style="width:59%; background-color:white;" >
         <h3> Workshops/Preprints (Non-Archival)</h3>
-        <ul class="text-left" style="display:inline-block;vertical-align:middle;">
+        <ul style="vertical-align:middle; list-style-type: none;">
           <li>
             <a href="https://www.doc.ic.ac.uk/~bglocker/public/mednips2017/med-nips_2017_paper_22.pdf">
             CNN based techniques for diagnosing multiple conditions in Chest X-Rays </a>
+
           </li>
+          <li>
+            presented at Medical Imaging Meets NIPS. Poster available <a href="https://drive.google.com/file/d/0B65JfOglGssKdlV0d0J0NDdUT216azZybTUzX3p4VXA4QWFN/view?usp=sharing"> here.</a>
+
+        </li>
           </ul>
 
       </div>
@@ -324,7 +331,7 @@
                         <p>
                             This was a project I originally undertook in 2016 in order to predict the flow of the Kenduskeag stream in Bangor ME. This involved many components including initially collecting flow and weather data in a PostgreSQL database, training a time series neural network (NARX) to predict flow in MATLAB, and finally displaying the predictions in ChartJS. Unfortunately, as you may know, MATLAB is not easily deployable and closed source; as such I do not have a working demo at the moment. However, I'm working at recreating our model in Python for both the Kenduskeag and other streams as well. In the process, I hope to make meaningful contributions and provide valuable insights to Python frameworks like PyFlux and PyNeurGen.
                         </p>
-                        <a href="https://medium.com/@paddlesoft/forecasting-the-flow-of-the-kenduskeag-a731c5d35aa6">View Project</a>
+                        <a href="https://github.com/isaacmg/kenduskeag_narx">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
