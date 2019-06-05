@@ -354,10 +354,25 @@ Includes detailed information about all my recent projects and interests."/>
     </div>
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Open Source Projects</h2>
+        <h2 class="heading"> Projects</h2>
         <div class="container">
             <div class="row">
-                    <div class="project shadow-large">
+                    
+                        
+                        <div class="project shadow-large">
+                            <div class="project-image">
+                                <img src="https://isaacmg.github.io/images/model_ag_final.png" height=300px width=350px />
+                            </div>
+                        <div class="project-info">
+                            <h3> <b> Peelout </b></h3>
+                            <p>
+                                This project aims to ease the difficulties surrounding utilzing deep learning models in a production environment. This involves three parts: creating a set of model agnostic tools to rapidly adapt models to the business use case, developing a set of scripts/extensions to existing frameworks to actually deploy the models, and designing a set of tools to monitor models and automatically adapt/continue to train the models. The focus now is on the deployment phase. Specifically, this consists of automatically packaging deep learning models into a Docker container and creating a Kubernetes based auto-scaling microservice that can integrate with other applications. There is also work to embed DL models in Flink (and other Java applications) directly with Java Embedded Python or JEP.
+                            </p>
+                            <a href="https://github.com/isaacmg/model_agnostic_prediction">View Project</a>
+                        </div>
+                        </div>
+
+                        <div class="project shadow-large">
                             <div class="project-image">
                                 <img src="https://www.researchgate.net/publication/51469608/figure/fig1/AS:339688444448772@1457999444671/Chest-X-ray-on-admission-showed-cardiomegaly-with-a-clear-lung.png" height=300px width=350px />
                             </div>
@@ -367,27 +382,13 @@ Includes detailed information about all my recent projects and interests."/>
                             <div class="project-info">
                                 <h3> <b> Detecting and classifying conditions in medical imaging with limited annotated data</b></h3>
                                 <p>
-                                    On going research into localizing and classifying a variety of conditions in lung X-Rays given only a small dataset through the use of transfer learning and meta-learning.  
+                                    This research explored localizing and classifying a variety of conditions in lung X-Rays given only a small dataset through the use of transfer learning and meta-learning. I for the most part have abandoned this project to focus on my NLP research and developing Peelout.   
                                 </p>
-                                <a href="">View Project</a>
+                                <a href="https://colab.research.google.com/drive/1UJdfaOpv7IcuraAg-IJLv9UQ_wumFOsN">View Project</a>
                             </div>
                             <!-- End .project-info -->
                         </div>
                         </div>
-                        
-                        <div class="project shadow-large">
-                            <div class="project-image">
-                                <img src="https://isaacmg.github.io/images/model_ag_final.png" height=300px width=350px />
-                            </div>
-                        <div class="project-info">
-                            <h3> <b> Model Agnostic Prediction </b></h3>
-                            <p>
-                                This project aims to allow users to use a common set of prediction functions (preprocessing, predict, and process_result) regardless of the backend code for their model. The goal is to make it easier to serve ML models in production. The code is compatibile with SeldonCore and I provide several examples of how to use it on the repository homepage.
-                            </p>
-                            <a href="https://github.com/isaacmg/model_agnostic_prediction">View Project</a>
-                        </div>
-                        </div>
-                    
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="https://isaacmg.github.io/images/cao.PNG" height=300px width=350px />
