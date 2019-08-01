@@ -367,7 +367,7 @@ Includes detailed information about all my recent projects and interests."/>
                         <p>
                             I developed a Game of Thrones chatbot from scratch using Flask, Redis, ElasticSearch, PostgreSQL, Spacy, and Tensorflow. The bot operated through a Flask based REST-API where incoming user messages (from the Slack-API) were combined with prior cached messages in Redis and fed to a combination of rule-based NLP methods and Tensorflow models. 
                             These methods in turn constructed queries to the appropiate data sources (ElasticSearch or PostgreSQL) and synthesized a response based 
-                            on the returned information. Full conversation history for the bot was stored in PostgreSQL and periodically analyzed and reintegrated into the training data to improve performance.  This app ran primarily on AWS (ElasticSearch service, ECS, and EC2), while a few of the Tensorflow components ran on GCP instances. Bot fully integrated with the Slack-API including providing custom formatting for messages and utilizing OAuth.
+                            on the returned information. Full conversation history for the bot was stored in PostgreSQL and periodically analyzed and reintegrated into the training data to improve performance.  This app ran primarily on AWS (ElasticSearch service, ECS, and EC2), while a few of the Tensorflow components ran on GCP instances. Bot integrated with the Slack-API and used OAuth for authorization.
                         </p>
                         <a href="https://towardsdatascience.com/building-a-chatbot-for-slack-from-scratch-part-1-understanding-language-1f085b2eda6c">View Project</a>
                     </div>
